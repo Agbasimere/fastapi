@@ -1,5 +1,5 @@
 from fastapi import Depends
-
+from fastapi import HTTPException
 
 async def dependency_a():
     dep_a = generate_dep_a()
