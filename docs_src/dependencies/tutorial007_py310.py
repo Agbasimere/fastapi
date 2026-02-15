@@ -4,3 +4,5 @@ async def get_db():
         yield db
     finally:
         db.close()
+async with DBSession() as db:
+    yield db
